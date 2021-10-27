@@ -13,6 +13,9 @@ namespace GuarayExamen
         public MainPage()
         {
             InitializeComponent();
+
+
         }
+
     }
 }

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuarayExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Blue" Padding="20">
+                <Label Text=""  x:Name="lblUsuario" TextColor="White" FontSize="24"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />               
+            </Frame>
+           
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                  
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre" Grid.Row="0" Margin="20" Grid.Column="0"/>
+                <Entry x:Name="txtNombre"  Grid.Row="0" Grid.Column="1" Keyboard="Chat"/>
+                <Label Text="Monto Inicial" Grid.Row="1"  Margin="20" Grid.Column="0"/>
+                <Entry x:Name="txtMontoInicial"  Keyboard="Numeric" Grid.Row="1"  Grid.Column="1"/>
+                <Label Text="Pago mensual" Grid.Row="2" Margin="20" Grid.Column="0" />
+                <Entry x:Name="txtPagoMensual" Grid.Row="2" IsReadOnly="true" Grid.Column="1"/>
+                <Button x:Name="btncalcular" Grid.Row="3" Grid.Column="0" Background="orange" Text="Calcular" Clicked="btncalcular_Clicked" HorizontalOptions="Center" TextColor="White"/>
+                <Button x:Name="btnGuaradr" Background="blue" Grid.Row="3" Grid.Column="1" IsEnabled="false" Text="Guardar" Clicked="btnGuaradr_Clicked"  HorizontalOptions="Center" TextColor="White"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
